@@ -24,6 +24,8 @@ a {
 
 button {
   cursor: pointer;
+  border: none;
+  display: block;
 }
 
 address {
@@ -132,13 +134,10 @@ ul {
 }
 
 .hero {
-  background-color: #2e2f42;
-}
-
-.hero-wrap {
   padding-top: 188px;
   padding-bottom: 188px;
   text-align: center;
+  background-color: #2e2f42;
 }
 
 .hero-title {
@@ -162,6 +161,9 @@ ul {
   background-color: #4d5ae5;
   border-radius: 4px;
   padding: 16px 32px;
+  min-width: 169px;
+  margin: 0 auto;
+  height: 56px;
 }
 
 .hero-btn:hover,
@@ -181,14 +183,15 @@ ul {
 .advantage {
   background-color: #fff;
 }
-.advantage-title {
-  display: none;
+
+.visually-hidden {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
 }
+
 .advantage-list {
   display: flex;
   gap: 24px;
@@ -336,6 +339,8 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+  display: inline-block;
+  margin-bottom: 16px;
 }
 
 .footer-link .accent {
@@ -346,7 +351,6 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
-  margin-top: 16px;
   max-width: 264px;
 }
 
