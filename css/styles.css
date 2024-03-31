@@ -43,6 +43,7 @@ ul {
 
 .header {
   background-color: #fff;
+  border-bottom: 1px solid #e7e9fc;
 }
 
 .container {
@@ -52,9 +53,8 @@ ul {
   margin: 0 auto;
 }
 
-.header-container {
+.header-menu {
   display: flex;
-  border-bottom: 1px color(#e7e9fc);
   padding-top: 24px;
   padding-bottom: 24px;
 }
@@ -62,6 +62,7 @@ ul {
 .header-nav {
   display: flex;
   flex-grow: 1;
+  align-items: center;
 }
 
 .header-link {
@@ -184,14 +185,23 @@ ul {
   background-color: #fff;
 }
 
-.visually-hidden {
+.advantage-title {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  position: fixed;
-  transform: scale(0);
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .advantage-list {
@@ -300,10 +310,8 @@ ul {
 }
 
 .portfolio-item-description {
-  padding: 32px 0 32px 16px;
-  border-bottom: 2px solid #f4f4fd;
-  border-left: 2px solid #f4f4fd;
-  border-right: 2px solid #f4f4fd;
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
 }
 
 .portfolio-image {
