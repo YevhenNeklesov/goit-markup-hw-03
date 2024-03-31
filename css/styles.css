@@ -245,6 +245,7 @@ ul {
 .team-item {
   background-color: #ffffff;
   width: calc((100% - 3 * 24px) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-image {
